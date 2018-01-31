@@ -1,0 +1,8 @@
+com\mybatis\entity\TbClass.class
+com\mybatis\service\ClassService.class
+com\mybatis\web\StuAction.class
+com\mybatis\dao\ClassDao.class
+com\mybatis\dao\StuDao.class
+com\mybatis\entity\TbStu.class
+com\mybatis\service\StuService.class
+com\mybatis\web\ClsAction.class

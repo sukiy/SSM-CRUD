@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper用于映射dao的接口，namespace指定Dao接口的完整类名 -->
+<mapper namespace="com.mybatis.dao.StuDao">
+
+    <resultMap id="stuMap" type="tbStu">
+        <id column="sno" property="sno"/>
+        <result column="sname" property="sname"/>
+        <result column="sage" property="sage"/>
+        
+        <association property="tbClass" javaType="TbClass">
+            <id column="cno" property="cno"/>
+            <result column="cname" property="cname"/>
+        </association>
+    </resultMap>
+</mapper>
